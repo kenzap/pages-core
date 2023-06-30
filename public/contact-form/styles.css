@@ -1,0 +1,316 @@
+.kr54xj img, .kr54xj ul, .kr54xj li {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+.kr54xj .container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.kr54xj .kp-form {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+
+.kr54xj .kp-form .half {
+  flex: 0 0 50%;
+  display: flex;
+}
+
+.kr54xj .kp-form .full {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.kr54xj .material-icons {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.kr54xj .center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  TITLE  */
+.kr54xj .title {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  padding: 2.8rem 4rem;
+  margin-bottom: 1.4rem;
+  font-size: 3.2rem;
+  color: #373737;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background: #f2f2f2;
+  font-weight: 700;
+}
+
+/*  FORM  */
+.kr54xj .form {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  box-sizing: border-box;
+  position: relative;
+}
+.kr54xj .form__1 {
+  grid-row: 2/3;
+}
+.kr54xj .form__2 {
+  grid-row: 3/4;
+}
+.kr54xj .form__3 {
+  grid-row: 4/5;
+}
+.kr54xj .form.active label {
+  transform: translateY(-1.6rem);
+  visibility: visible;
+  font-size: 1.3rem;
+  color: var(--baseColorA);
+}
+.kr54xj .form__input {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--grayColorB);
+  transition: all 0.3s;
+}
+.kr54xj .form__input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--grayColorB);
+}
+.kr54xj .form__input:focus:invalid {
+  border-bottom: 2px solid var(--baseColorA);
+}
+.kr54xj .form__label {
+  font-size: 1.4rem;
+  color: var(--grayColorB);
+  position: absolute;
+  top: 2rem;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.kr54xj .form__btn {
+  background-color: var(--baseColorA);
+  color: #fff;
+  border: 1px solid var(--baseColorA);
+  font-size: 1.2rem;
+  padding: 16px 32px;
+  margin: 2.8rem 0 0rem 0rem;
+  float: right;
+  cursor: pointer;
+  border-radius: var(--borderStyle);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.24s;
+}
+.kr54xj .form__btn p {
+  margin: 0;
+}
+.kr54xj .form__btn:focus {
+  outline: 0;
+}
+.kr54xj .form__btn:hover {
+  background-color: #fff;
+  color: var(--baseColorA);
+}
+.kr54xj .form__btn--invisible {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -100%;
+}
+.kr54xj .form__btn--invisible.visible {
+  top: 11px;
+}
+.kr54xj .form__btn--visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kr54xj .form__btn--visible.invisible {
+  transform: translateY(200%);
+}
+.kr54xj .form .kenzap-checkbox {
+  margin: 0 0 4px;
+}
+.kr54xj .form .kenzap-checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 32px;
+  color: var(--txtColorB);
+  font-size: 1rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  cursor: pointer;
+}
+.kr54xj .form .kenzap-checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  margin-left: 0px;
+  border: 1px solid var(--txtColorB);
+  border-radius: 3px;
+  background-color: var(--bc, #fff);
+  background-clip: content-box;
+  padding: 2px;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.kr54xj .form .kenzap-checkbox input[type=checkbox] {
+  opacity: 0;
+  z-index: 1;
+  padding: 8px;
+  margin-top: 8px;
+  transform: scale(1.5);
+  position: absolute;
+  cursor: pointer;
+}
+.kr54xj .form :checked + label {
+  color: var(--txtColorB);
+}
+.kr54xj .form input[type=checkbox]:checked + label::before {
+  background-color: var(--baseColorA);
+  border-color: var(--txtColorB);
+}
+@media only screen and (max-width: 680px) {
+  .kr54xj .form.half {
+    flex: 0 0 100%;
+    display: flex;
+  }
+}
+
+/*  MAIL ICON  */
+.kr54xj .container-mail {
+  grid-column: 2/3;
+  grid-row: 2/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31rem;
+  height: 28rem;
+  margin-bottom: 4rem;
+}
+
+.kr54xj .mail {
+  position: relative;
+  top: -4rem;
+  left: -6rem;
+}
+.kr54xj .mail__top {
+  position: absolute;
+  top: -5.7rem;
+  width: 0;
+  height: 0;
+  border-right: 8rem solid transparent;
+  border-left: 8rem solid transparent;
+  border-bottom: 5.8rem solid #ffab17;
+  z-index: 0;
+}
+.kr54xj .mail__top.closed {
+  transition: transform 0.6s 0.8s, z-index 0.2s 0.4s;
+  z-index: 2;
+  transition-delay: 0.5s;
+  transform-origin: bottom left;
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+.kr54xj .mail__back {
+  position: absolute;
+  background: #ffab17;
+  width: 16rem;
+  height: 10rem;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.kr54xj .mail__left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8rem solid #ffc867;
+  border-top: 5rem solid transparent;
+  border-bottom: 5rem solid transparent;
+}
+.kr54xj .mail__right {
+  position: absolute;
+  left: 8rem;
+  width: 0;
+  height: 0;
+  border-right: 8rem solid #ffc867;
+  border-top: 5rem solid transparent;
+  border-bottom: 5rem solid transparent;
+}
+.kr54xj .mail__bottom {
+  position: absolute;
+  top: 4.92rem;
+  width: 0;
+  height: 0;
+  border-right: 8rem solid transparent;
+  border-left: 8rem solid transparent;
+  border-bottom: 5.08rem solid #ffbb43;
+}
+.kr54xj .mail__letter {
+  position: absolute;
+  top: -4rem;
+  left: 2rem;
+  width: 12rem;
+  height: 9rem;
+  background: #fff;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+.kr54xj .mail__letter.move {
+  transform: translateY(45px);
+}
+.kr54xj .mail__letter * {
+  background: #e0e0e0;
+}
+.kr54xj .mail__letter-square {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  width: 3.8rem;
+  height: 4rem;
+}
+.kr54xj .mail__letter-square::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  width: 10rem;
+  height: 1.5rem;
+  background: inherit;
+}
+.kr54xj .mail__letter-lines {
+  top: 4.9rem;
+  left: 5.8rem;
+}
+.kr54xj .mail__letter-lines, .kr54xj .mail__letter-lines::before, .kr54xj .mail__letter-lines::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 0.3rem;
+  background: #e0e0e0;
+}
+.kr54xj .mail__letter-lines::before {
+  top: -1rem;
+}
+.kr54xj .mail__letter-lines::after {
+  top: 1rem;
+}

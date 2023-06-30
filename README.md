@@ -1,16 +1,21 @@
-# Kenzap Cloud Pages - MyTicket Layouts
+# Kenzap Cloud Pages - Universal Layouts
 
-A set of myticket layouts designed for https://pages.kenzap.cloud/
+A collection of open-sourced layouts used in https://pages.kenzap.cloud/ 
 
-![My Data extension dashboard](https://raw.githubusercontent.com/kenzap/pages-myticket/main/preview.jpeg)
+![Pages layouts](https://raw.githubusercontent.com/kenzap/pages-universala/main/preview.png)
 
-<b>Included layouts:</b>
+<b>Some layouts:</b>
 
 <ul>
-<li>Event Hall - Seat reservation module</li>
-<li>Single event listing</li>
-<li>Event grid listing</li>
-<li>Event thank you page for checkout</li>
+<li>About me</li>
+<li>Contacts</li>
+<li>Footer</li>
+<li>Gallery</li>
+<li>Menu</li>
+<li>Paragraph</li>
+<li>Portfolio</li>
+<li>Spotify</li>
+<li>Youtube</li>
 </ul>
 
 ## Setup

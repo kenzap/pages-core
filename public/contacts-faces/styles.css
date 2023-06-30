@@ -1,0 +1,114 @@
+.kWm600 img, .kWm600 ul, .kWm600 li {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+.kWm600 .container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.kWm600 .kenzap-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.kWm600 .kenzap-col-4 {
+  width: 33.33333%;
+}
+
+.kWm600 .kp-box {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin: 0 0 60px;
+}
+
+.kWm600 .kp-box .kp-img {
+  width: 90px;
+  margin: 0 30px 0 0;
+}
+
+.kWm600 .kp-box .kp-img img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 30px 0 0;
+  border: 2px solid var(--baseColorA);
+}
+
+.kWm600 .kp-box .kp-content h4 {
+  margin: 0 0 0.2rem;
+  font-size: 1.2rem;
+  color: var(--txtColorA);
+}
+
+.kWm600 .kp-box .kp-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kWm600 .kp-box .kp-content ul li {
+  margin: 0 0 0rem;
+}
+
+.kWm600 .kp-box .kp-content ul li:last-child {
+  margin: 0;
+}
+
+.kWm600 .kp-box .kp-content ul li.phone a {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--txtColorB);
+  text-decoration: none;
+}
+
+.kWm600 .kp-box .kp-content ul li.email a {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--baseColorA);
+}
+
+.kWm600.kenzap-md .kenzap-col-4 {
+  width: 50%;
+}
+
+.kWm600.kenzap-sm .kenzap-col-4,
+.kWm600.kenzap-xs .kenzap-col-4 {
+  width: 100%;
+}
+
+.kWm600.kenzap-md .kp-box,
+.kWm600.kenzap-sm .kp-box,
+.kWm600.kenzap-xs .kp-box {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+  .kWm600 .kenzap-col-4 {
+    width: 50%;
+  }
+  .kWm600 .kp-box {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+@media screen and (max-width: 48em) {
+  /* width 768px */
+  .kWm600.kenzap-md .kenzap-col-4,
+  .kWm600 .kenzap-col-4 {
+    width: 100%;
+  }
+}
