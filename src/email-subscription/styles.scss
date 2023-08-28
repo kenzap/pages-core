@@ -1,0 +1,114 @@
+.kqaUcT img, .kqaUcT ul, .kqaUcT li {
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+.kqaUcT .container {
+	max-width: 1168px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.kqaUcT .kp-content{
+	text-align:center;
+	max-width:635px;
+	margin:0 auto;
+	
+}
+
+.kqaUcT .kp-content h3{
+	color:ar(--txtColorA);
+	// font-size:40px;
+	// margin:0 0 1rem;
+}
+
+.kqaUcT .kp-content .kp-form .wrapper{
+	position:relative;
+	margin: 0 0 20px;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+
+.kqaUcT .kp-content .kp-form input[type="email"]{
+	font-size: 1rem;
+	height:57px;
+	padding: 13px 25px;
+	text-align: left;
+	border: none;
+	border-left: 1px solid var(--grayColorB);
+	border-top: 1px solid var(--grayColorB);
+	border-bottom: 1px solid var(--grayColorB);
+	border-top-left-radius: var(--borderStyle);
+	border-bottom-left-radius: var(--borderStyle);
+	border-right: none;
+	background: none;
+	color: var(--txtColorB);
+	outline:none;
+	width:74%;
+	box-sizing: border-box;
+}
+
+.kqaUcT .kp-content .kp-form input[type="submit"]{
+	font-size:1rem;
+	border: 1px solid var(--baseColorA);
+	background:var(--baseColorA);
+	color:var(--grayColorA);
+	border-top-right-radius: var(--borderStyle);
+	border-bottom-right-radius: var(--borderStyle);
+	width:26%;
+	height:57px;
+	letter-spacing: .1em;
+	cursor:pointer;
+	-webkit-transition: color .3s ease,background-color .3s ease,border-color .3s ease;
+	-moz-transition: color .3s ease,background-color .3s ease,border-color .3s ease;
+	transition: color .3s ease,background-color .3s ease,border-color .3s ease;
+}
+
+.kqaUcT .kp-content .kp-form input[type="submit"]:hover{
+	background:var(--grayColorA);
+	border:2px solid var(--baseColorA);
+	color:var(--baseColorA);
+}
+
+.kqaUcT .kp-content .kp-form input[type="checkbox"]{
+	margin:4px 10px 0 0;
+}
+
+.kqaUcT .kp-content .kp-form label{
+	font-family: "Open Sans",sans-serif;
+	font-size:14px;
+	font-weight: 400;
+	line-height:1.5;
+	color:#1b1b1b;
+	display:flex;
+	display:-webkit-flex;
+	align-items:flex-start;
+	-webkit-align-items:flex-start;
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+
+@media screen and (max-width: 30em) {
+	/* width 480px */
+	.kqaUcT .kp-content .kp-form input[type="submit"]{
+		letter-spacing:0
+	}
+}
+
+
+
+
+
+
+
+
+
+

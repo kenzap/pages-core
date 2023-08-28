@@ -1,10 +1,10 @@
 # Kenzap Cloud Pages - Universal Layouts
 
-A collection of open-sourced layouts used in https://pages.kenzap.cloud/ 
+A collection of open-sourced layouts used in https://pages.kenzap.cloud/
 
-![Pages layouts](https://raw.githubusercontent.com/kenzap/pages-universala/main/preview.png)
+![Pages layouts](https://cdn.kenzap.com/github/img/timeline-3.png)
 
-<b>Some layouts:</b>
+<b>Layout Examples:</b>
 
 <ul>
 <li>About me</li>

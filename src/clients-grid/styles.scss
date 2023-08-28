@@ -1,0 +1,246 @@
+.kX5ytW img, .kX5ytW ul, .kX5ytW li {
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+.kX5ytW .container {
+	max-width: 1168px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.kX5ytW ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	overflow:hidden;
+}
+
+.kX5ytW ul li{
+	width:25%;
+	float:left;
+}
+
+.kX5ytW ul li a{
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	-webkit-justify-content:center;
+	height:192px;
+	border-right:1px dashed var(--grayColorB);
+	border-bottom:1px dashed var(--grayColorB);
+}
+
+.kX5ytW ul li:nth-child(4n+4) a{
+	border-right:none;
+}
+
+.kX5ytW ul li:nth-child(n+9) a{
+	border-bottom:none;
+}
+
+.kX5ytW ul li a img{
+	display:block;
+	width:var(--logoSize);
+	height:auto;
+}
+
+@media screen and (max-width: 61.938em) {
+	/* width: 991px; */
+	
+	.kX5ytW ul li{
+		width:33.33333%;
+	}
+	
+	.kX5ytW ul li:nth-child(4n+4) a{
+		border-right:1px dashed var(--grayColorB);
+	}
+
+	.kX5ytW ul li:nth-child(n+9) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+	
+	.kX5ytW ul li:nth-child(3n+3) a{
+		border-right:none;
+	}
+
+	.kX5ytW ul li:nth-child(n+10) a{
+		border-bottom:none;
+	}	
+}
+
+@media screen and (min-width: 61.938em) {
+	/* width: 991px; */
+	
+	.kX5ytW .kenzap-md ul li{
+		width:33.33333%;
+	}
+	
+	.kX5ytW .kenzap-md ul li:nth-child(4n+4) a{
+		border-right:1px dashed var(--grayColorB);
+	}
+
+	.kX5ytW .kenzap-md ul li:nth-child(n+9) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+	
+	.kX5ytW .kenzap-md ul li:nth-child(3n+3) a{
+		border-right:none;
+	}
+
+	.kX5ytW .kenzap-md ul li:nth-child(n+10) a{
+		border-bottom:none;
+	}	
+}
+
+@media screen and (max-width: 48em) {
+	/* width 768px */
+	
+	.kX5ytW ul li{
+		width:50%;
+	}
+		
+	.kenzap-clients-1 ul li:nth-child(3n+3) a{
+		border-right:1px dashed var(--grayColorB);
+	}
+
+	.kX5ytW ul li:nth-child(n+10) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+	
+	.kX5ytW ul li:nth-child(2n+2) a{
+		border-right:none;
+	}
+
+	.kX5ytW ul li:nth-child(n+11) a{
+		border-bottom:none;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	/* width 768px */
+	
+	.kX5ytW .kenzap-sm ul li{
+		width:50%;
+	}
+		
+	.kX5ytW .kenzap-sm ul li:nth-child(3n+3) a{
+		border-right:1px dashed var(--grayColorB);
+	}
+
+	.kX5ytW .kenzap-sm ul li:nth-child(n+10) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+	
+	.kX5ytW .kenzap-sm ul li:nth-child(2n+2) a{
+		border-right:none;
+	}
+
+	.kX5ytW .kenzap-sm ul li:nth-child(n+11) a{
+		border-bottom:none;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	/* width 480px */
+	
+	.kX5ytW ul li{
+		width:100%;
+	}
+	
+	.kX5ytW ul li a,
+	.kX5ytW ul li:nth-child(3n+3) a,
+	.kX5ytW ul li:nth-child(2n+2) a{
+		border-right:none;
+	}
+
+	.kX5ytW ul li:nth-child(n+11) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+		
+	.kX5ytW ul li:last-child a{
+		border-bottom:none
+	}
+	
+	.kX5ytW ul li a img{
+		display:block;
+		width:55%;
+		height:auto;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	/* width 480px */
+	
+	.kX5ytW .kenzap-xs ul li{
+		width:100%;
+	}
+	
+	.kX5ytW .kenzap-xs ul li a,
+	.kX5ytW .kenzap-xs ul li:nth-child(3n+3) a,
+	.kX5ytW .kenzap-xs ul li:nth-child(2n+2) a{
+		border-right:none;
+	}
+
+	.kX5ytW .kenzap-xs ul li:nth-child(n+11) a{
+		border-bottom:1px dashed var(--grayColorB);
+	}
+		
+	.kX5ytW .kenzap-xs ul li:last-child a{
+		border-bottom:none
+	}
+	
+	.kX5ytW .kenzap-xs ul li a img{
+		display:block;
+		width:55%;
+		height:auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+//   .kX5ytW .info-box {
+// 	margin: 0 auto;
+//   }
+  
+//   .kX5ytW .info-box .kp-img {
+// 	margin: 0 auto 0px auto;
+//   }
+  
+//   .kX5ytW .info-box .kp-img img {
+// 	border-radius: 50%;
+// 	display: inline-block;
+// 	max-width: 100%;
+//   }
+  
+//   .kX5ytW .info-box .kp-content p {
+// 	color: var(--txtColorA);
+// 	font-style: normal;
+//   }
+  
+//   .kX5ytW.kenzap-xs .info-box, .kX5ytW.kenzap-sm .info-box {
+// 	width: 100%;
+//   }
+  
+//   @media screen and (max-width: 48em) {
+//    /* width 768px */  .kX5ytW .info-box {
+// 	  width: 100%;
+// 	}
+//   }
