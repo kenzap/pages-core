@@ -1,7 +1,5 @@
 // dependencies
 import { __html, attr, html } from '@kenzap/k-cloud';
-import { hexToRGB } from "../_/_helpers.js"
-import Glide from '@glidejs/glide'
 
 class kWm600{
 
@@ -55,19 +53,6 @@ class kWm600{
         </section>
         `
       );
-
-      this.listeners();
-    }
-
-    listeners = () => {
-
-      // new Glide('.glide', {
-      //     type: 'carousel',
-      //     perView: 1,
-      //     focusAt: 'center',
-      //     hoverpause: true,
-      //     autoplay: 5000,
-      // }).mount()
     }
 }
 
