@@ -4,7 +4,7 @@
   left: 2rem;
   width: 2.8rem;
   cursor: pointer;
-  z-index: 2;
+  z-index: 101;
 }
 
 .kx0SBH .menu-cont input {
@@ -42,7 +42,7 @@
   width: 240px;
   padding: 0 4rem;
   font-size: 1.4rem;
-  z-index: 1;
+  z-index: 100;
   background: var(--grayColorA);
   will-change: transform opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
@@ -56,6 +56,7 @@
 .kx0SBH .menu-drawer[opened=true] {
   transform: none;
   opacity: 1;
+  z-index: 100;
 }
 
 .kx0SBH .menu-drawer nav {

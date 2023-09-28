@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title> 
+		<meta name="Description" content="" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto" rel="stylesheet">
+		<link href="../assets/css/global.css?t=${timestamp}" rel="stylesheet">
+		<link href="styles.css?t=${timestamp}" rel="stylesheet">
+		<style>
+
+.banner {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.countdown-item {
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 8px; /* Add 8px padding */
+    margin: 16px; /* Add 16px margin */
+    border-radius: 5px;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.countdown-item p {
+    font-size: 18px;
+}
+
+
+
+		</style>
+		<script>
+
+			// Set the date we're counting down to (replace with your desired date and time)
+			const countdownDate = new Date("2023-12-31T00:00:00").getTime();
+
+			// Update the countdown every 1 second
+			const x = setInterval(function () {
+				const now = new Date().getTime();
+				const distance = countdownDate - now;
+
+				const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the countdown timer
+				document.getElementById("days").innerHTML = days.toString().padStart(2, "0");
+				document.getElementById("hours").innerHTML = hours.toString().padStart(2, "0");
+				document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, "0");
+				document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
+
+				// If the countdown is over, display a message
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+
+		</script>
+	</head>
+	<body>
+
+		<div class="banner">
+			<h1>Countdown Timer</h1>
+			<div class="countdown">
+				<div class="countdown-item">
+					<span id="days">00</span>
+					<p>Days</p>
+				</div>
+				<div class="countdown-item">
+					<span id="hours">00</span>
+					<p>Hours</p>
+				</div>
+				<div class="countdown-item">
+					<span id="minutes">00</span>
+					<p>Minutes</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+
+
+		</div>
+		<script type="text/javascript" src="index.js?t=${timestamp}"></script>
+		<script>
+
+			document.addEventListener("DOMContentLoaded", () => {
+						
+				new kQFW7T(
+					{
+						"version": "1.0.0",
+						"title": "YouTube",
+						"description": "Layout to add live YouTube preview to your website",
+						"preview": true,
+						"slug": "youtube",
+						"header": {
+							"input": "richtext",
+							"title": "Header",
+							"value": "",
+							"hint": "Header title or description."
+						},
+						"url": {
+							"input": "text",
+							"title": "Embed url",
+							"value": "https://www.youtube.com/embed/fkJzkfr8f1M",
+							"default": "",
+							"hint": ""
+						},
+						"template": "universal",
+						"csslibs": "",
+						"jslibs": "",
+						"keywords": "banner, youtube, video, playback, streaming",
+						"c": {
+							"section": "background-color:#f9f9f9;",
+							"container": "max-width:1168px;padding-left:16px;padding-right:16px;",
+							"classes": "pdm "
+						}
+					}
+				);			
+			});
+
+		</script>
+	</body>
+</html>

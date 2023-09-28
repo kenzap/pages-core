@@ -1,5 +1,5 @@
 // dependencies
-import { __html, attr, onClick } from '@kenzap/k-cloud';
+import { __html, html, attr, onClick } from '@kenzap/k-cloud';
 
 class kx0SBH{
 
@@ -22,13 +22,13 @@ class kx0SBH{
       document.querySelector('#content').insertAdjacentHTML('beforeend', 
         `
         <div class="kx0SBH">
-          <label class='menu-cont'>
-            <input type='checkbox' class="open" name='menu-button' >
+          <label class="menu-cont">
+            <input type="checkbox" class="menu-state open" name="menu-button" >
             <span></span> 
             <span></span>
             <span></span>
           </label>
-          <div class='menu-drawer' opened=false>
+          <div class="menu-drawer" opened=false>
             <nav>
               ${
 
@@ -52,16 +52,23 @@ class kx0SBH{
 
       // open drawer
       onClick('.kx0SBH .open', e => {
-        let checked = document.querySelector('input[type=checkbox]').checked;
+        let checked = document.querySelector('.menu-state').checked;
         let drawer = document.querySelector('.menu-drawer');
         drawer.setAttribute('opened', checked);
       });
 
       // close drawer
       onClick('.kx0SBH .close', e => {
-        let checked = document.querySelector('input[type=checkbox]').checked;
+        let checked = document.querySelector('.menu-state').checked;
         let drawer = document.querySelector('.menu-drawer');
         drawer.setAttribute('opened', checked);
+      });
+
+      // close drawer after menu item clicked
+      onClick('.kx0SBH .menu-drawer nav a', e => {
+        document.querySelector('.menu-state').checked = false;
+        let drawer = document.querySelector('.menu-drawer');
+        drawer.setAttribute('opened', false);
       });
     }
 }
